@@ -1,2 +1,2 @@
 # Progetti_vecchi_in_HTML
-Boh robba a caso in HTML che ho trovato sul pc
+Sono una raccolta di vecchi progetti o almeno quelli che ho ancora salvati dei progetti HTML che ho realizzato alle superiori
