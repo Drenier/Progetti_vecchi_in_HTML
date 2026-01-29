@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+ <title>Disegnare i forms con HTML5</title>
+ <style>
+ body {
+ margin: 0; padding: 0;
+ font-size: 12px;
+ font-family: "Verdana", sans-serif;
+ color: #444;
+ }
+ section {
+ width: 400px;
+ height: 230px;
+ margin: 0 auto;
+ border-left: 1px solid #ccc;
+ border-right: 1px solid #ccc;
+ margin-top: 10px;
+ padding: 15px;
+ padding-top: 5px;
+ }
+ fieldset {
+ clear: left;
+ border: 0px;
+ border-bottom: 1px dotted #dcdcdc;
+ padding: 10px;
+ height: 30px;
+ }
+ label {
+ font-weight: bold;
+ width: 100px;
+ float: left;
+ }
+ input, textarea {
+ border: 1px solid #dcdcdc;
+ padding: 4px;
+ width: 250px;
+ color: #444;
+ float: left;
+ }
+ button {
+ margin-left: 100px;
+ border: 1px solid #ccc;
+ padding: 10px;
+ color: #444;
+ }
+ .firstSection {
+ border-top: 1px solid #ccc;
+ height: 200px;
+ }
+ .lastSection {
+ border-bottom: 1px solid #ccc;
+ height: 185px;
+ }
+ .longLine {
+ height: 70px;
+ }
+ .note {
+ font-size: 11px;
+ font-style: italic;
+ }
+ .noBottomBorder {
+ border: 0;
+ }
+ </style>
+</head>
+<body bgcolor="#f1e8ce">
+<form>
+<section class="firstSection">
+ <h2>Dati anagrafici</h2>
+ <p class="note">L'asterisco (*) indica i campi obbligatori</p>
+ <fieldset>
+ <label>Nome *</label><input name="nome" id="nome" type="text" required 
+autofocus="autofocus">
+ </fieldset> 
+ <fieldset>
+ <label>Numero Figli</label><input name="n_figli" id="n_figli" 
+type="number" min="0" max="10">
+ </fieldset> 
+</section>
+<section>
+ <h2>Dati commerciali</h2>
+ <fieldset>
+ <label>Telefono *</label><input name="telefono" id="telefono" type="tel" 
+required>
+ </fieldset>
+ <fieldset>
+ <label>P. Iva</label><input name="piva" id="piva" type="text">
+ </fieldset>
+ <fieldset>
+ <label>Email *</label><input name="email" id="email" type="email" 
+placeholder="nome@dominio.it" required>
+ </fieldset>
+ <fieldset>
+ <label>Sito Personale</label><input name="sito" id="sito" type="url" 
+placeholder="www.sito.com">
+ </fieldset>
+</section>
+<section class="lastSection">
+ <h2>Informazioni extra</h2>
+ <fieldset class="longLine">
+ <label>Commenti</label><textarea name="commenti" id="commenti" 
+placeholder="www.sito.com" maxlength="100" wrap="soft"></textarea>
+ </fieldset>
+ <fieldset class="noBottomBorder">
+ <button name="commenti" id="commenti">Invia</button>
+ </fieldset>
+</section>
+<center><b>Clicca <a href=PaginaCarb1.html>qui</a> per tornare alla prima pagina </b> </center>
+</font>
+</form>
+</body>
+</html>
